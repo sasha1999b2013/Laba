@@ -5,10 +5,6 @@
 #include <fstream>
 #include <Windows.h>
 using namespace std;
-//перевод текста в азбуку морзе
-void convert(string a)
-{
-	//std::cout << a.size() << std::endl;
 	for (int i = 0; i < a.size(); i++) {
 		if (a[i] == ' ')
 			cout << endl;
@@ -86,7 +82,7 @@ void convert(string a)
 			cout << "--.." << endl;
 		else
 		{
-			cout << "?" << endl;
+			cout << " ? " << endl;
 		}
 	}
 	cout << endl;
